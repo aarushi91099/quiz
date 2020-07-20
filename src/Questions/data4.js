@@ -65,7 +65,7 @@ export default [
     seriesId: 4,
     question: "In how many years does the cycle takes place?",
     answers: ["23 years", "33 years", "27 years", "37 years"],
-    correct: 3,
+    correct: 2,
   },
   {
     seriesId: 4,

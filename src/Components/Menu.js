@@ -4,14 +4,19 @@ import { Link } from "react-router-dom";
 
 function RenderMenuItem({ series, onClick }) {
   return (
-    <Card>
+    <Card className="cards">
       <Link to={`/menu/${series.id}`}>
-        <CardImg width="100%" src={series.image} alt={series.name} />
+        <CardImg
+          className="imgs"
+          width="100%"
+          src={series.image}
+          alt={series.name}
+        />
       </Link>
-      <CardTitle>
+      <CardTitle className="title">
         <b>{series.name}</b>
       </CardTitle>
-      <CardText>{series.description}</CardText>
+      <CardText className="text">{series.description}</CardText>
     </Card>
   );
 }
@@ -20,7 +25,7 @@ const Menu = (props) => {
   const menu = props.series.map((series) => {
     console.log(series.id);
     return (
-      <div className="col-md m-1" key={series.id}>
+      <div key={series.id}>
         <RenderMenuItem series={series} />
       </div>
     );
@@ -28,10 +33,12 @@ const Menu = (props) => {
   console.log("Hi");
   return (
     <div className="container">
-      <div className="row">
-        <div className="col-2"></div>
-        <div className="col-8">{menu}</div>
-        <div className="col-2"></div>
+      <div className="flex-container">
+        {/* <div className="col-lg-8"> */}
+        <br />
+        {menu}
+        <br />
+        {/* </div> */}
       </div>
     </div>
   );

@@ -2,26 +2,73 @@ body {
   margin: 0px;
   padding: 0px;
   font-family: Open Sans;
+  background-color: #303030;
+  /* background-image: url("https://lh3.googleusercontent.com/proxy/yJddTDH2ZsF6jrnAqrZtaZzusIhuL0jg8GL-ux70u9xLRdOcV0BHo8cJ_L1zgkIFZIq0VSomgVZWeDpGyrO-_cLRU6-e0N0bv_s5crnzVQNn6L1kSPqfJgYsl2PeNY0"); */
+  /* background-repeat: no-repeat; */
 }
 
 .footer {
-  background-color: #84a9ac;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #ebebeb;
   font-size: medium;
   margin: 0px auto;
   padding: 20px 0px 20px 0px;
 }
 .jumbotron {
   margin: 0px;
-  background: #3b6978;
-  color: floralwhite;
+  /* background-color: #5d5175; */
+  background-image: url("https://eftm.com/wp-content/uploads/2020/03/bba9dce9-c6e0-4ac7-433c-b4e3438db177-scaled.jpg");
+  columns: #000000;
 }
 
 .navbar-dark {
   margin: 0px;
-  background-color: #204051;
+  /* background-color: #5d5175; */
+  /* background: url(../public/Assets/images/back.jpg); */
 }
 
 .header {
   height: 50px;
   font-size: medium;
+}
+
+.imgs {
+  height: 180px;
+}
+
+.cards {
+  width: auto;
+  height: 420px;
+  margin: 20px;
+  padding: 0px;
+}
+
+.title {
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+.text {
+  font-size: medium;
+  font-family: sans-serif;
+  padding: 10px 10px 10px 10px;
+}
+.card-r {
+  margin: 10px 10px;
+  padding: 0px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-container > div {
+  width: 300px;
+  margin: 20px;
+  text-align: center;
 }

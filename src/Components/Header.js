@@ -30,44 +30,44 @@ class Header extends Component {
   render() {
     return (
       <React.Fragment>
-        <Navbar dark expand="md">
-          <div className="container header">
-            <NavbarToggler onClick={this.toggleNav} />
-            <NavbarBrand className="mr-auto" href="/">
-              <img
-                src="assets/images/logo1.png"
-                height="40"
-                width="41"
-                alt="TV Series Quiz"
-              />
-            </NavbarBrand>
-            <Collapse isOpen={this.state.isNavOpen} navbar>
-              <Nav navbar>
-                <NavItem>
-                  <NavLink className="nav-link" to="/home">
-                    <span className="fa fa-home fa-lg"></span> Home
-                  </NavLink>
-                </NavItem>
-                <NavItem>
-                  <NavLink className="nav-link" to="/menu">
-                    <span className="fa fa-bars fa-lg"></span> Menu
-                  </NavLink>
-                </NavItem>
-              </Nav>
-              <Nav className="ml-auto" navbar>
-                <NavItem>
-                  <input
-                    type="search"
-                    placeholder="Search"
-                    aria-label="Search"
-                  />
-                  <button type="submit">Search</button>
-                </NavItem>
-              </Nav>
-            </Collapse>
-          </div>
-        </Navbar>
         <Jumbotron>
+          <Navbar dark expand="md">
+            <div className="container header">
+              <NavbarToggler onClick={this.toggleNav} />
+              <NavbarBrand className="mr-auto" href="/">
+                <img
+                  src="assets/images/logo1.png"
+                  height="40"
+                  width="41"
+                  alt="TV Series Quiz"
+                />
+              </NavbarBrand>
+              <Collapse isOpen={this.state.isNavOpen} navbar>
+                <Nav navbar>
+                  <NavItem>
+                    <NavLink className="nav-link" to="/home">
+                      <span className="fa fa-home fa-lg"></span> Home
+                    </NavLink>
+                  </NavItem>
+                  <NavItem>
+                    <NavLink className="nav-link" to="/menu">
+                      <span className="fa fa-bars fa-lg"></span> Menu
+                    </NavLink>
+                  </NavItem>
+                </Nav>
+                <Nav className="ml-auto" navbar>
+                  <NavItem>
+                    <input
+                      type="search"
+                      placeholder="Search"
+                      aria-label="Search"
+                    />
+                    <button type="submit">Search</button>
+                  </NavItem>
+                </Nav>
+              </Collapse>
+            </div>
+          </Navbar>
           <div className="container">
             <center>
               <h1>Series Trivia</h1>
