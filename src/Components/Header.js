@@ -21,7 +21,7 @@ class Header extends Component {
             <div className="container header">
               <NavbarBrand className="mr-auto" href="/">
                 <img
-                  src="assets/images/logo1.png"
+                  src="assets/images/logo.png"
                   height="40"
                   width="41"
                   alt="TV Series Quiz"
@@ -34,7 +34,7 @@ class Header extends Component {
                       <span className="fa fa-home fa-lg"></span> Home
                     </NavLink>
                   </button>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                   <button type="submit">
                     <NavLink className="nav-link" to="/menu">
                       <span className="fa fa-bars fa-lg"></span> Menu

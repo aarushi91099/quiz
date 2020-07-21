@@ -9,8 +9,6 @@ body {
     rgba(255, 0, 0, 0)
   );
   z-index: -100;
-  /* background-image: url("https://lh3.googleusercontent.com/proxy/yJddTDH2ZsF6jrnAqrZtaZzusIhuL0jg8GL-ux70u9xLRdOcV0BHo8cJ_L1zgkIFZIq0VSomgVZWeDpGyrO-_cLRU6-e0N0bv_s5crnzVQNn6L1kSPqfJgYsl2PeNY0"); */
-  /* background-repeat: no-repeat; */
 }
 
 .footer {
@@ -24,8 +22,6 @@ body {
 }
 .jumbotron {
   margin: 0px;
-  /* background-color: #5d5175; */
-  /* background-image: url("https://eftm.com/wp-content/uploads/2020/03/bba9dce9-c6e0-4ac7-433c-b4e3438db177-scaled.jpg"); */
   background-image: url(./ab.jpg);
   background-repeat: no-repeat;
   color: floralwhite;
@@ -33,13 +29,10 @@ body {
 
 .navbar-dark {
   margin: 0px;
-  /* background-color: #5d5175; */
-  /* background: url(../public/Assets/images/back.jpg); */
 }
 
 .header {
   display: inline;
-  /* height: 50px; */
   font-size: medium;
 }
 
@@ -95,7 +88,8 @@ button {
   background-color: transparent;
   width: 200px;
   height: 200px;
-  border: 10px solid #f1f1f1;
+  border: 10px solid #020202;
+  border-radius: 10%;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 
@@ -118,6 +112,7 @@ button {
 /* Position the front and back side */
 .flip-card-front,
 .flip-card-back {
+  border-radius: 5%;
   position: absolute;
   padding: 10px 10px 10px 10px;
   width: 100%;
@@ -135,14 +130,16 @@ button {
 /* Style the back side */
 .flip-card-back {
   background-color: dodgerblue;
+  text-align: center;
   color: white;
   transform: rotateY(180deg);
 }
 
 .flex-box {
-  margin: 10px;
+  margin: 50px 50px 50px 50px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-flow: row wrap;
   flex-wrap: wrap;
 }
 
