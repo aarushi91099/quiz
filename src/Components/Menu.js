@@ -1,9 +1,27 @@
 import React from "react";
-import { Card, CardImg, CardImgOverlay, CardTitle, CardText } from "reactstrap";
+import {
+  Card,
+  CardImg,
+  CardImgOverlay,
+  CardTitle,
+  CardText,
+  CardBody,
+} from "reactstrap";
 import { Link } from "react-router-dom";
 
 function RenderMenuItem({ series, onClick }) {
   return (
+    //   <Card className="wrapper">
+    //     <CardBody className="content">
+    //       <Link to={`/menu/${series.id}`}>
+    //         <CardImg className="image" src={series.image} alt={series.name} />
+    //       </Link>
+    //       <CardText className="cardTitle">
+    //         <b>{series.name}</b>
+    //       </CardText>
+    //       {/* <CardText className="text">{series.description}</CardText> */}
+    //     </CardBody>
+    //   </Card>
     <Card className="cards">
       <Link to={`/menu/${series.id}`}>
         <CardImg

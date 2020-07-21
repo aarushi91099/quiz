@@ -3,8 +3,6 @@ import {
   Navbar,
   NavbarBrand,
   Nav,
-  NavbarToggler,
-  Collapse,
   NavItem,
   Jumbotron,
   Button,
@@ -14,26 +12,13 @@ import { NavLink } from "react-router-dom";
 class Header extends Component {
   constructor(props) {
     super(props);
-
-    this.toggleNav = this.toggleNav.bind(this);
-    this.state = {
-      isNavOpen: false,
-    };
   }
-
-  toggleNav() {
-    this.setState({
-      isNavOpen: !this.state.isNavOpen,
-    });
-  }
-
   render() {
     return (
       <React.Fragment>
         <Jumbotron>
           <Navbar dark expand="md">
             <div className="container header">
-              <NavbarToggler onClick={this.toggleNav} />
               <NavbarBrand className="mr-auto" href="/">
                 <img
                   src="assets/images/logo1.png"
@@ -42,30 +27,21 @@ class Header extends Component {
                   alt="TV Series Quiz"
                 />
               </NavbarBrand>
-              <Collapse isOpen={this.state.isNavOpen} navbar>
-                <Nav navbar>
-                  <NavItem>
+              <Nav className="ml-auto" navbar>
+                <NavItem>
+                  <button type="submit">
                     <NavLink className="nav-link" to="/home">
                       <span className="fa fa-home fa-lg"></span> Home
                     </NavLink>
-                  </NavItem>
-                  <NavItem>
+                  </button>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                  <button type="submit">
                     <NavLink className="nav-link" to="/menu">
                       <span className="fa fa-bars fa-lg"></span> Menu
                     </NavLink>
-                  </NavItem>
-                </Nav>
-                <Nav className="ml-auto" navbar>
-                  <NavItem>
-                    <input
-                      type="search"
-                      placeholder="Search"
-                      aria-label="Search"
-                    />
-                    <button type="submit">Search</button>
-                  </NavItem>
-                </Nav>
-              </Collapse>
+                  </button>
+                </NavItem>
+              </Nav>
             </div>
           </Navbar>
           <div className="container">
