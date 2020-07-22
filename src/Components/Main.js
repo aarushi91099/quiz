@@ -61,7 +61,7 @@ class Main extends Component {
             <Route
               exact
               path="/menu"
-              component={() => <Menu series={this.state.series} />}
+              render={() => <Menu series={this.state.series} />}
             />
             <Route path="/menu/:seriesId" component={SeriesWithId} />
             <Redirect to="/home" />
