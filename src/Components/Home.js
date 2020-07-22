@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 
@@ -8,37 +8,37 @@ export default function CarouselComponent() {
       <div class="carousel-wrapper">
         <Carousel infiniteLoop useKeyboardArrows autoPlay>
           <div>
-            <img src="/Assets/images/holmes2.jpg" />
+            <img src="/Assets/images/holmes2.jpg" alt="Sherlock" />
           </div>
           <div>
-            <img src="/Assets/images/fri.jpg" />
+            <img src="/Assets/images/fri.jpg" alt="Friends" />
           </div>
           <div>
-            <img src="/Assets/images/got1.jpg" />
+            <img src="/Assets/images/got1.jpg" alt="GOT" />
           </div>
           <div>
-            <img src="/Assets/images/dark1.png" />
+            <img src="/Assets/images/dark1.png" alt="Dark" />
           </div>
           <div>
-            <img src="/Assets/images/bad1.jpg" />
+            <img src="/Assets/images/bad1.jpg" alt="Breaking bad" />
           </div>
           <div>
-            <img src="/Assets/images/bbt1.jpg" />
+            <img src="/Assets/images/bbt1.jpg" alt="Big Bang Theory" />
           </div>
           <div>
-            <img src="/Assets/images/pb.jpg" />
+            <img src="/Assets/images/pb.jpg" alt="Peaky blinders" />
           </div>
           <div>
-            <img src="/Assets/images/st.png" />
+            <img src="/Assets/images/st.png" alt="Stranger things" />
           </div>
           <div>
-            <img src="/Assets/images/mh.jpeg" />
+            <img src="/Assets/images/mh.jpeg" alt="Money heist" />
           </div>
           <div>
-            <img src="/Assets/images/luci.jpg" />
+            <img src="/Assets/images/luci.jpg" alt="lucifer" />
           </div>
           <div>
-            <img src="/Assets/images/suits.jpg" />
+            <img src="/Assets/images/suits.jpg" alt="Suits" />
           </div>
         </Carousel>
       </div>

@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Navbar, NavbarBrand } from "reactstrap";
 import Menu from "./Menu";
 import Header from "./Header";
 import Home from "./Home";
@@ -11,7 +10,7 @@ import Breakbad from "./Breakbad";
 import Tbbt from "./Tbbt";
 import Footer from "./Footer";
 import { SERIES } from "../Shared/Series";
-import { Switch, Route, Redirect, BrowserRouter } from "react-router-dom";
+import { Switch, Route, Redirect } from "react-router-dom";
 
 class Main extends Component {
   constructor(props) {
@@ -31,22 +30,22 @@ class Main extends Component {
     };
 
     const SeriesWithId = ({ match }) => {
-      if (match.params.seriesId == 1) {
+      if (parseInt(match.params.seriesId) === 1) {
         return <Sherlock />;
       }
-      if (match.params.seriesId == 2) {
+      if (parseInt(match.params.seriesId) === 2) {
         return <Friends />;
       }
-      if (match.params.seriesId == 3) {
+      if (parseInt(match.params.seriesId) === 3) {
         return <Got />;
       }
-      if (match.params.seriesId == 4) {
+      if (parseInt(match.params.seriesId) === 4) {
         return <Dark />;
       }
-      if (match.params.seriesId == 5) {
+      if (parseInt(match.params.seriesId) === 5) {
         return <Breakbad />;
       }
-      if (match.params.seriesId == 6) {
+      if (parseInt(match.params.seriesId) === 6) {
         return <Tbbt />;
       }
     };
@@ -57,7 +56,6 @@ class Main extends Component {
         <br />
         <br />
         <div className="container">
-          {/* <BrowserRouter> */}
           <Switch>
             <Route path="/home" component={HomePage} />
             <Route
@@ -68,7 +66,6 @@ class Main extends Component {
             <Route path="/menu/:seriesId" component={SeriesWithId} />
             <Redirect to="/home" />
           </Switch>
-          {/* </BrowserRouter> */}
         </div>
         <br />
         <br />

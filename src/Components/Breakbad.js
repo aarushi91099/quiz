@@ -43,7 +43,7 @@ class Breakbad extends React.Component {
   }
 
   nextQuestion() {
-    let { nr, total, score } = this.state;
+    let { nr, total } = this.state;
 
     if (nr === total) {
       this.setState({

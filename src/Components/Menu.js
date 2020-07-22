@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  Card,
-  CardImg,
-  CardImgOverlay,
-  CardTitle,
-  CardText,
-  CardBody,
-} from "reactstrap";
+import { Card, CardImg, CardTitle, CardText } from "reactstrap";
 import { Link } from "react-router-dom";
 
 function RenderMenuItem({ series, onClick }) {
