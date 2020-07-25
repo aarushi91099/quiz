@@ -10,7 +10,7 @@ import Breakbad from "./Breakbad";
 import Tbbt from "./Tbbt";
 import Footer from "./Footer";
 import { SERIES } from "../Shared/Series";
-import { Switch, Route, Redirect } from "react-router-dom";
+import { Switch, Route, Redirect, BrowserRouter } from "react-router-dom";
 
 class Main extends Component {
   constructor(props) {
@@ -27,6 +27,9 @@ class Main extends Component {
   render() {
     const HomePage = () => {
       return <Home />;
+    };
+    const MenuPage = () => {
+      return <Menu series={this.state.series} />;
     };
 
     const SeriesWithId = ({ match }) => {
@@ -58,11 +61,7 @@ class Main extends Component {
         <div className="container">
           <Switch>
             <Route path="/home" component={HomePage} />
-            <Route
-              exact
-              path="/menu"
-              render={() => <Menu series={this.state.series} />}
-            />
+            <Route exact path="/menu" component={MenuPage} />
             <Route path="/menu/:seriesId" component={SeriesWithId} />
             <Redirect to="/home" />
           </Switch>
