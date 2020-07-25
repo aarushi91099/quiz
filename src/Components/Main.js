@@ -10,7 +10,7 @@ import Breakbad from "./Breakbad";
 import Tbbt from "./Tbbt";
 import Footer from "./Footer";
 import { SERIES } from "../Shared/Series";
-import { Switch, Route, Redirect } from "react-router-dom";
+import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 
 class Main extends Component {
   constructor(props) {
@@ -55,22 +55,26 @@ class Main extends Component {
 
     return (
       <div>
-        <Header />
-        <br />
-        <br />
-        <div className="container">
-          <Switch>
-            <Route path="/home" component={HomePage} />
-            <Route exact path="/menu" component={MenuPage} />
-            <Route path="/menu/:seriesId" component={SeriesWithId} />
-            <Redirect to="/home" />
-          </Switch>
-        </div>
-        <br />
-        <br />
-        <br />
-        <br />
-        <Footer />
+        <React.Fragment>
+          <BrowserRouter>
+            <Header />
+            <br />
+            <br />
+            <div className="container">
+              <Switch>
+                <Route path="/home" component={HomePage} />
+                <Route exact path="/menu" component={MenuPage} />
+                <Route path="/menu/:seriesId" component={SeriesWithId} />
+                <Redirect to="/home" />
+              </Switch>
+            </div>
+            <br />
+            <br />
+            <br />
+            <br />
+            <Footer />
+          </BrowserRouter>
+        </React.Fragment>
       </div>
     );
   }
