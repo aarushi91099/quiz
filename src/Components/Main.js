@@ -10,7 +10,7 @@ import Breakbad from "./Breakbad";
 import Tbbt from "./Tbbt";
 import Footer from "./Footer";
 import { SERIES } from "../Shared/Series";
-import { Switch, Route, Redirect, BrowserRouter } from "react-router-dom";
+import { Switch, Route, Redirect } from "react-router-dom";
 
 class Main extends Component {
   constructor(props) {
