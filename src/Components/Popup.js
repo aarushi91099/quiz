@@ -26,7 +26,7 @@ class Popup extends React.Component {
       });
       this.props.startQuiz();
     } else {
-      window.location.reload(); // restart the application
+      window.location.reload();
     }
   }
 

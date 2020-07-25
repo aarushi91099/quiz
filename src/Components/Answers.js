@@ -52,11 +52,6 @@ class Answers extends React.Component {
     let { answers } = this.props;
     let { classNames } = this.state;
 
-    // let transition = {
-    //     transitionName: "example",
-    //     transitionEnterTimeout: 500,
-    //     transitionLeaveTimeout: 300
-    // }
     console.log(classNames);
     return (
       <div id="answers">
